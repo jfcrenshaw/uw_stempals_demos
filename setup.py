@@ -1,11 +1,8 @@
-import setuptools
-
 from setuptools import setup, find_packages
 
 extras = {
     "dev": [
         "black",
-        "pytest",
         "pylint",
         "twine",
         "jupyter",
@@ -16,18 +13,18 @@ extras = {
 }
 
 setup(
-    name="package_name",
+    name="uw_stempals_demos",
     version="0.1.0",
     author="John Franklin Crenshaw",
     author_email="jfc20@uw.edu",
-    description="Package description.",
+    description="Demo simulations for UW's STEM Pals outreach program.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     license="MIT",
-    url="http://github.com/jfcrenshaw/python-package",
+    url="http://github.com/jfcrenshaw/uw_stempals_demos",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=["numpy"],
+    install_requires=["numpy", "matplotlib"],
     extras_require=extras,
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -37,6 +34,4 @@ setup(
         "Topic :: Scientific/Engineering",
     ],
     python_requires=">=3.6.0",
-    setup_requires=["pytest-runner"],
-    tests_require=["pytest"],
 )
