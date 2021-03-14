@@ -4,7 +4,7 @@
 Demo simulations for the UW STEM Pals outreach program.
 
 Demo links (opens in Google Colabs):
-1. Pandemic Simulation (need to add this link!)
+1. [Pandemic Simulation](https://colab.research.google.com/github/jfcrenshaw/uw_stempals_demos/blob/main/notebooks/pandemic-demo.ipynb)
 2. Galaxy Collision Simulation (need to write!)
 
 ## Details
