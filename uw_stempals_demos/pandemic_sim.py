@@ -4,7 +4,7 @@ from matplotlib import animation, rc
 
 # set animation backends
 rc("animation", html="jshtml")
-rc("animation", embed_limit=50)
+rc("animation", embed_limit=60)
 
 
 def pandemicSim(
@@ -116,7 +116,7 @@ def pandemicSim(
     }
 
     # set sizes of plotting elements
-    r_bbl = 0.03 * np.sqrt(c) * np.ones(N)  # radius of the unmasked bubbles
+    r_bbl = 0.04 * np.sqrt(c) * np.ones(N)  # radius of the unmasked bubbles
     r_bbl[masked] *= np.sqrt(1 - qMask / 100)  # radius of masked bubbles
     s_bbl = (72 * 2 * r_bbl * fig_inches * wsubplot / L) ** 2 * np.ones(N)
     s_unmasked_ppl = 3 / L ** 2
