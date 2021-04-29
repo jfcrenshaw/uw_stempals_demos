@@ -133,9 +133,9 @@ def pandemicSim(
     )
     # track number of sick people
     N_currently_sick, N_total_sick = [Nsick], [Nsick]
-    (currently_sick_ppl,) = ax2.plot(N_currently_sick, label="Currently")
-    (total_sick_ppl,) = ax2.plot(N_total_sick, label="Total")
-    ax2.legend()
+    (currently_sick_ppl,) = ax2.plot(N_currently_sick, c="C3", label="Currently")
+    (total_sick_ppl,) = ax2.plot(N_total_sick, c="k", ls=":", label="Total")
+    ax2.legend(loc="upper left")
 
     plt.close()
 
@@ -192,6 +192,6 @@ def pandemicSim(
     # ---------------------
     # create the animation
     # ---------------------
-    anim = animation.FuncAnimation(fig, step, frames=tTotal, interval=20, blit=True)
+    anim = animation.FuncAnimation(fig, step, frames=tTotal, interval=50, blit=True)
 
     return anim
