@@ -14,7 +14,7 @@ The notebooks can be run locally by cloning the repo and installing the package.
 However, they can also be from any browser via Google Colabs without any setup (which is the intended use case).
 To do this, click on one of the links above.
 
-The code code for the simulations is in the `uw_stempals_demos` directory.
+The code for the simulations is in the `uw_stempals_demos` directory.
 
 ## How to contribute
 
